@@ -25,46 +25,68 @@
 
 </head>
 <body>
-  
-  <header>
-      <div class="center">
-
-        <div class="col-xs-3">
-          <img id="logo-menu" src="IMG/...">
-          <a href="index.html" class="quinze">
-          <b id="texto-menu">Fylipe&Yvo</b>
-          </a>
-        </div>
-
-        <div class="col-xs-6">
-          <nav>
-            <ul>
-              <li><a href="index.html"> Home </a></li>
-              <li><a href=".html"> Home2 </a></li>
-              <li><a href=".html"> Home3 </a></li>
-              <li><a href=".html"> Home4 </a></li>
-              <li><a href=".html"> Home5 </a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <div class="col-xs-3">
-          <a href="index.html">
-          <img src="IMG/...">
-          </a>
-
-          <a href="index.html">
-          <img src="IMG/...">
-          </a>
-
-          <a href="index.html">
-          <img src="IMG/...">
-          </a>
-        </div>
-        <br>
-
+  <div class="container"> <!-- Começo do container -->
+    <div class="row" id="titulo-fundo">
+      <div class="col-xs-12">
+        <h1>
+          Cálculo do Metabolismo Basal
+        </h1>
       </div>
-    </header>
+    </div>  
 
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+
+    <div class="row">
+      <div class="col-xs-6">
+        <img src="IMG/muiefix.png" id="btnMulher">
+      </div>
+
+      <div class="col-xs-6">
+        <img src="IMG/cabrafix.png" id="btnHomem">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <input type="radio" name="opcao1" value="sedentario"> Sedentário<br>
+        <input type="radio" name="opcao2" value="levementeativo"> Levemente ativo<br>
+        <input type="radio" name="opcao3" value="moderadamenteativo"> Moderadamente ativo<br>
+        <input type="radio" name="opcao4" value="altamenteativo"> Altamente ativo<br>
+        <input type="radio" name="opcao5" value="extremamenteativo"> Extremamente ativo<br>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-xs-4">
+        <b></b>
+      </div>
+      <div class="col-xs-8">
+        <input type="text" name="texto" class="form-control " id="inputPeso">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-4">
+        <b></b>
+      </div>
+      <div class="col-xs-8">
+        <input type="text" name="texto" class="form-control " id="inputAltura">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-3">
+        <b></b>
+      </div>
+      <div class="col-xs-9">
+        <input type="text" name="texto" class="form-control " id="inputIdade">
+      </div>
+    </div>
+
+
+  </div>  <!-- Fim do container -->
 </body>
 </html>
