@@ -15,7 +15,7 @@
 
   <!-- Código Jquery -->
   <script src="components/jquery-3.3.1.min.js"></script>
-  <script src="components/estilo.js"></script>
+  <script src="components/acao.js"></script>
 
   <link rel="stylesheet" href="components/loader.css">
 
@@ -47,13 +47,13 @@
     <div class="row">
       <div class="col-xs-6">
         <center>
-        <img src="IMG/muiefix.png" id="btnMulher">
+        <button id="btnSexo" class="btnSexo"><img src="IMG/muiefix.png"></button>
         </center>
       </div>
 
       <div class="col-xs-6">
         <center>
-        <img src="IMG/cabrafix.png" id="btnHomem">
+        <button id="btnSexo2" class="btnSexo2"><img src="IMG/cabrafix.png"></button>
         </center>
       </div>
     </div>
@@ -64,17 +64,22 @@
       </div>
     </div>
 
+
+    <div class="col-xs-1">
+    </div>
     <div class="row">
-      <div class="col-xs-12">
-          <select id=" atividade" class="form-control">
-            <option value="sedentario">Sedentario</option>
-            <option value="levementeAtivo">Levemente ativo</option>
-            <option value="morderadamenteAtivo">Morderadamente Ativo</option>
-            <option value="altamenteAtivo">Altamente Ativo</option>
-            <option value="extremamenteAtivo">Extremamente Ativo</option>
+      <div class="col-xs-10">
+          <select id="atividade" class="form-control" placeholder="Selecione uma opção">
+            <option id="op" value="sedentario">Sedentario (pouco ou nenhum exercício)</option>
+            <option id="op" value="levementeAtivo">Levemente ativo (pouco ou nenhum exercício)</option>
+            <option id="op" value="morderadamenteAtivo">Morderadamente Ativo (exercício moderado)</option>
+            <option id="op" value="altamenteAtivo">Altamente Ativo (exercício pesado)</option>
+            <option id="op" value="extremamenteAtivo">Extremamente Ativo (exercício pesado diariamente)</option>
           </select>
         <div class="circle3"></div>
       </div>
+    </div>
+    <div class="col-xs-1">
     </div>
     <br>
 
@@ -85,42 +90,61 @@
     </div>
 
     <div class="row">
-      <div class="col-xs-2">
+      <div class="col-xs-3">
         <b>Altura:</b>
       </div>
-      <div class="col-xs-10">
+      <div class="col-xs-8">
         <input type="text" name="texto" class="form-control " id="inputPeso">
         <br>
       </div>
+      <div class="col-xs-1">
+      </div>
     </div>
 
     <div class="row">
-      <div class="col-xs-2">
+      <div class="col-xs-3">
         <b>Peso:</b>
       </div>
-      <div class="col-xs-10">
+      <div class="col-xs-8">
         <input type="text" name="texto" class="form-control " id="inputAltura">
         <br>
       </div>
+      <div class="col-xs-1">
+      </div>
     </div>
 
     <div class="row">
-      <div class="col-xs-2">
+      <div class="col-xs-3">
         <b>Idade:</b>
       </div>
-      <div class="col-xs-10">
+      <div class="col-xs-8">
         <input type="text" name="texto" class="form-control " id="inputIdade">
+      </div>
+      <div class="col-xs-1">
       </div>
     </div>
 
-      <div class="row">
-        <div class="col-md-12">
-          <center>
-           <input type="submit" class="button" value="Calcular" id="calcular">
-            <div class="circle2"></div>
-          </center>
-          </div>
-        </div>
+    <div class="row">
+       <div class="col-xs-12">
+        <center>
+         <input type="submit" class="button" value="Calcular" id="calcular">
+        </center>
+      </div>
+    </div>
+
+    <div class="circle2"></div>
+
+    <div class="col-xs-1">
+    </div>
+    <div class="row">
+       <div class="col-xs-10">
+        <center>
+         <input type="text" class="form-control resultado" id="displayResultado" readonly>
+        </center>
+      </div>
+    </div>
+    <div class="col-xs-1">
+    </div>
        
 
 
