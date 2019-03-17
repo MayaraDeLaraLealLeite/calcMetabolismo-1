@@ -1,18 +1,46 @@
 /**/
-body
-{
-
+body{
+  background-image: url('fundo.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 h1{
-  margin-top: 1%;
+  margin-top: 3%;
   font-size: 20px;
+  font-weight: bold;
   text-align: center;
 }
 
 h2{
   font-size: 20px;
   text-align: center;
+}
+
+#titulo-fundo{
+  height: 100%;
+  background-color: rgb(230, 87, 175);
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+  border-radius: 0px 0px 10px 10px;
+}
+
+#barra{
+  height: 45px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    cursor:pointer;
+    display:block;
+    width:8px;
+    color: #333;
+    text-align:center;
+    position:relative;
+}
+
+input[type=number] { 
+   -moz-appearance: textfield;
+   margin: 0; 
 }
 
 #btnSexo{
@@ -27,63 +55,26 @@ h2{
   border-radius: 50%;
 }
 
-.btnSexo{
+#mulher{
   opacity: 1;
 }
 
-.btnSexo2{
+#homem{
   opacity: 1;
 }
 
-#titulo-fundo{
-  height: 100%;
-  background-color: rgb(228, 74, 169);
-  box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
-}
-
-.circle{
-    border-radius:100%;
-    width:300px;
-    height:300px;
-    background-color: rgb(122, 209, 243);
-    position: fixed;
-    right: 50px;
-    opacity: 0.5;
-}
-
-.circle2{
-    border-radius:100%;
-    width:300px;
-    height:300px;
-    background-color:rgb(228, 74, 169);
-    position: fixed;
-    margin-right: 100px;
-    opacity: 0.5;
-}
-
-.circle3{
-    border-radius:100%;
-    width:300px;
-    height:300px;
-    background-color:yellow;
-    position: fixed;
-    margin-left: 200px;
-    
-}
-IMG 
-{
+IMG{
    height: 140px;
    margin-top:10px;
    margin-bottom: 10px;
-  
 }
-#calcular
-{
+
+#calcular{
   color: black;
-  background-color: rgb(145, 188, 253);
-  margin-top: 10px;
-  border-radius: 30px;
- 
+  background-color: rgb(122, 209, 243);
+  margin-top: 6%;
+  border-radius: 15px;
+  width: 30%;
 }
 
 b{
@@ -95,23 +86,30 @@ b{
   font-weight: bold;
 }
 
-#displayResultado
-{
+#displayResultado{
   font-weight: bold;
   margin-left: 30px;
   margin-bottom: 5px;
 }
-.btnInformacao {
 
-position: fixed;
-z-index: 999;
-top: 550px;
-left: 260px;
-border: none;
-background-color: rgb(255, 166, 0); 
-border-radius: 60px;
+p{
+  font-weight: bold;
 }
-.escondido
-{
-  display: none;
+
+#resultado{
+  font-size: 16px;
+  margin-left: -5%;
+}
+
+#divInformacao{
+  height: 100%;
+  background-color: white;
+}
+
+#txtInfo{
+  margin-top: 3%;
+}
+
+#btnInfo{
+  margin-top: 5%;
 }
