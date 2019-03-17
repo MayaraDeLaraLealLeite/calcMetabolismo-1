@@ -9,6 +9,35 @@ var total = 0;
 
 var valorAtividade = 0;
 
+// funções do botao de informaçoes
+var btnInfo;
+var btnfechar;
+var mostrarDivInfo;
+var fecharDivInfo;
+
+window.onload = function()
+{
+  divInformacao = document.getElementById("divInformacao");
+
+  var btnInfo = document.getElementById("btnInfo");
+  btnInfo.onclick = mostrarDivInfo;
+  var btnfechar = document.getElementById("btnfechar");
+  btnfechar.onclick = fecharDivInfo;
+
+  divInformacao.classList.add("escondido");
+  btnfechar.classList.add("escondido");
+}
+function mostrarDivInfo()
+{
+   divInformacao.classList.remove("escondido");
+}
+function fecharDivinfo()
+{
+   divInformacao.classList.add("escondido");
+}
+
+
+
 //Botão para selecionar o sexo, se for mulher o sexo = 1 e se for homem, é sexo = 2
 $(document).on("click", "#btnSexo", function(){
   $('.btnSexo').css({opacity:"1"});
@@ -54,5 +83,7 @@ $(document).on("click", "#calcular", function(){
     $("#displayResultado").val(total.toFixed(2).replace("." , ","));
 
   }
-
+ 
 })
+
+

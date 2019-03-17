@@ -60,17 +60,17 @@
 
     <div class="row">
       <div class="col-xs-12">
-        <h2>Você se considera:</h2>
+        <h2>Nivel de Atividade:</h2>
       </div>
     </div>
 
 
-    <div class="col-xs-1">
-    </div>
+
     <div class="row">
-      <div class="col-xs-10">
-          <select id="atividade" class="form-control">
-            <option value="1.2">Sedentario (pouco ou nenhum exercício)</option>
+      <div class="col-xs-12">
+          <select id="atividade" class="form-control" >
+            <option value="" disabled selected>Selecione...</option>
+            <option value="1.2"><p>Sedentario (pouco ou nenhum exercício)</p></option>
             <option value="1.375">Levemente ativo (exercício leve)</option>
             <option value="1.55">Morderadamente Ativo (exercício moderado)</option>
             <option value="1.725">Altamente Ativo (exercício pesado)</option>
@@ -78,8 +78,6 @@
           </select>
         <div class="circle3"></div>
       </div>
-    </div>
-    <div class="col-xs-1">
     </div>
     <br>
 
@@ -139,14 +137,27 @@
       <div class="col-xs-3">
         <b>Resultado:</b>
       </div>
-       <div class="col-xs-5">
+       <div class="col-xs-6">
         <center>
          <input type="text" class="form-control resultado" id="displayResultado" readonly>
         </center>
       </div>
     </div>
-       
 
+
+ <button id="bntInfo">O que é Metabolismo Basal?
+ </button>
+   <div class="divInformacao"> 
+       <p> 
+         O metabolismo basal se refere à quantidade mínima de energia que o corpo humano necessita ter à sua disposição enquanto está em repouso para que consiga sobreviver, ou seja, equivale ao número de calorias que são gastas durante o sono e ao valor mínimo de calorias que cada um deve ingerir durante o dia. Vale ressaltar que o termo não se aplica à quantidade de energia que o corpo gasta quando já está acordado.
+
+Essa taxa mínima energética é necessária ao organismo para que ele consiga exercer funções vitais que não são interrompidas durante o sono como a respiração e o bombeamento de sangue. Pensando especificamente no metabolismo, essa quantia básica de energia é fundamental para que ele receba a quantidade adequada de fluidos que o regulam.
+
+
+       </p>
+       <button id="btnfechar">Fechar
+       </button>
+    </div>
 
   </div>  
 </body>
