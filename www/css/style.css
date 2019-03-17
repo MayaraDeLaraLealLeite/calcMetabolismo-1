@@ -1,14 +1,17 @@
 /**/
-body{
+body
+{
+
 }
 
 h1{
-  margin-top: 3%;
-  font-size: 25px;
+  margin-top: 1%;
+  font-size: 20px;
+  text-align: center;
 }
 
 h2{
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -76,8 +79,11 @@ IMG
 }
 #calcular
 {
+  color: black;
+  background-color: rgb(145, 188, 253);
   margin-top: 10px;
-  border-radius: 60px;
+  border-radius: 30px;
+ 
 }
 
 b{
@@ -92,5 +98,20 @@ b{
 #displayResultado
 {
   font-weight: bold;
-  text-align: center;
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+.btnInformacao {
+
+position: fixed;
+z-index: 999;
+top: 550px;
+left: 260px;
+border: none;
+background-color: rgb(255, 166, 0); 
+border-radius: 60px;
+}
+.escondido
+{
+  display: none;
 }
