@@ -1,54 +1,31 @@
-// This is a JavaScript file
-
+// Variaveis utilizadas
 var valorAltura = 0;
 var valorPeso = 0;
 var valorIdade = 0;
 var sexo = 0;
-
 var total = 0;
-
 var valorAtividade = 0;
 
 // funções do botao de informaçoes
-var btnInfo;
-var btnfechar;
-var mostrarDivInfo;
-var fecharDivInfo;
+$(document).ready(function(){
+    $("#divInformacao").hide(200);
 
-window.onload = function()
-{
-  divInformacao = document.getElementById("divInformacao");
-
-  var btnInfo = document.getElementById("btnInfo");
-  btnInfo.onclick = mostrarDivInfo;
-  var btnfechar = document.getElementById("btnfechar");
-  btnfechar.onclick = fecharDivInfo;
-
-  divInformacao.classList.add("escondido");
-  btnfechar.classList.add("escondido");
-}
-function mostrarDivInfo()
-{
-   divInformacao.classList.remove("escondido");
-}
-function fecharDivinfo()
-{
-   divInformacao.classList.add("escondido");
-}
-
-
+    $("#btnInfo").click(function(){
+        $("#divInformacao").toggle(500);
+    });
+});
 
 //Botão para selecionar o sexo, se for mulher o sexo = 1 e se for homem, é sexo = 2
 $(document).on("click", "#btnSexo", function(){
-  $('.btnSexo').css({opacity:"1"});
+  $('#mulher').css({opacity:"1"});
   sexo = 1;
-  $('.btnSexo2').css({opacity:"0.3"});
+  $('#homem').css({opacity:"0.25"});
 })
 
 $(document).on("click", "#btnSexo2", function(){
-  $('.btnSexo2').css({opacity:"1"});
+  $('#homem').css({opacity:"1"});
   sexo = 2;
-  $('.btnSexo').css({opacity:"0.3"});
+  $('#mulher').css({opacity:"0.25"});
 })
 
 //Pegando valor de uma option do select
@@ -80,10 +57,7 @@ $(document).on("click", "#calcular", function(){
       total = valorAtividade * (66 + (13.7 * valorPeso) + (5 * valorAltura) - (6.8 * valorIdade));
     }
 
-    $("#displayResultado").val(total.toFixed(2).replace("." , ","));
+    $("#displayResultado").val(total.toFixed(2).replace("." , ",") + " É sua 'TMB'");
 
   }
- 
 })
-
-
